@@ -24,12 +24,10 @@ if len(sys.argv) > 1:
   else:
     host = sys.argv[1]
     req = 0
-    found = False
     for str_stat in stat:
       key, val = str_stat.split(':')
       if key == host:
         req = int(val)
-        Found = True
 
     print(req)
 
